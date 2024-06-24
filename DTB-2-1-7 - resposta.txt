@@ -1,0 +1,14 @@
+# 2.1.7 Explique detalhadamente o que é um guard.
+O guard é um mecanismo que define o driver e provider para controlar a autenticação do usuário e recuperar essas informações para verificação.
+
+O driver é responsável pela linha de frente fornecendo mecanismos de identificar o usuário da requisição. Seja por sessão e cookies ou tokens e etc.
+
+O priveder é a forma como essas informações serão recuperadas.
+
+Por padrão o Laravel usa o SessionGuard que é definido no kernel do Laravel, ou seja nativamente.
+Por padrão também é usado o provider user junamente com o SessionGuard.
+
+Se nas rotas não for definido nenhum guard e provider manualmente, serão definidos automaticamente de acordo com o padrão definido em config/auth.php.
+
+O Laravel suporta múltiplos guards simultâneos.
+Sendo assim é possível usar sessions para acessos web em certas páginas tanto quanto ter rotas configuradas para APIs usando auenticação por token.
