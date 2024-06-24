@@ -1,0 +1,19 @@
+# 2.1.10 Como funciona o Auth do Laravel?
+O Auth funciona como uma solução completa de autenticação do usuário e outras funcionalidades.
+
+O Auth define os guards e providers para autenticação dos usuários e recuperação desses dados para verificação.
+
+Cria middlewares para garantir autenticação em certas rotas tal como personalizar guards e providers para determinadas rotas.
+
+É capaz de autenticar um usuário e efetuar o login e logout do mesmo.
+
+Controla a sessão e todo o ciclo de autenticação.
+
+Nativo no Laravel, é ele quem lê o arquivo de configuração em config/auth.php em busca dos guards.
+
+No próprio kernel do Laravel existem alguns guards e providers previamente definidos.
+
+O Auth lê o arquivo de configuração config/auth.php e através do AuthManager carrega os guards e provides definidos.
+Também podem ser usados guards e provides customizados se forem criados e registrados.
+
+Além de carregar os guards e providers, também pode ser usado para definir middlewares, ser invocado para validações como Auth::check(), ser invocado para obter o usuário autenticado, realizar o login do usuário identificado e logout também.
