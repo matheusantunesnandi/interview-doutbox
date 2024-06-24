@@ -1,0 +1,6 @@
+# 2.1.2 O que são os controllers?
+Controllers são classes responsáveis por receberem e processarem a requisição de determinada rota definida.
+
+Os controllers intermediam as rotas e os models. Também podem conter regras de negócio ou interagir com classes que tenham essas regras.
+
+Recebem as requisições, validam elas, utilizam alguns models e regras de negócio direta ou indiretamente, e retornam as respostas aos clientes.
