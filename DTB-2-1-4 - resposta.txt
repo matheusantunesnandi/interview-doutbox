@@ -1,0 +1,13 @@
+# 2.1.4 O que é MVC?
+MVC significa ModelViewController.
+
+Separa a aplicações em três camadas bem definidas.
+1) Models: Modelos que representam tabelas no banco de dados e como se comunicar com ele. Não interage com as views;
+2) Views: Interfaces gráficas do usuário e lógicas de renderização das mesmas. Não interage com os models;
+3) Controllers: Lógica de processamento das requisições e regras de negócio. Interage com models e views diretamente para retornar uma resposta ao cliente.
+
+Models ficam responsáveis por serem representações de tabelas no banco de dados (BD) e lógica de comunicação entre aplicação e BD.
+
+Os controllers são responsáveis por conter ou saber onde estão as regras de negócio e usa-lás em conjunto com os models para processarem e responderem requisições geradas pelos clientes. No fim usam as views para renderizarem e retornarem as resposatas aos clientes, que podem ou não uasr isso para gerarem novas requisições.
+
+As views fazem parte de uma camada que agrupam a lógica de criação e renderização das interfaces gráficas utilizadas pelos clientes. Nelas são definidas as lógicas de renderizaçao das quais os controllers utilizam para entregar as páginas aos clientes.
