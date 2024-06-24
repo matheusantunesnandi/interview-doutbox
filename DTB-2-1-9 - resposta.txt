@@ -1,0 +1,4 @@
+# 2.1.9 Qual a principal função do Artisan em um projeto Laravel?
+Fornecer uma série de comandos para facilitar e automatizar tarefas repetitivas no desenvolvimento.
+
+Comandos como serve, migrate, make, route:list e outros de limpeza de cache são muito usados.
