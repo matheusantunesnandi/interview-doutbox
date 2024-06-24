@@ -1,0 +1,8 @@
+# 2.1.8 Qual a principal função do composer em um projeto Laravel?
+A principal função é gerenciar as dependências.
+
+A gestão dessas dependências é feita através do controle de versões compatíveis e versões exatas utilizadas.
+
+Ao instalar ou atualizar dependências pode ser necessário limpar caches ou outras ações. Com o composer é possível definir scripts antes e depois da instalação ou atualização das dependências, facilitando a gestão das dependências.
+
+Para a correta instalação ou atualização das dependências o composer também pode ser usado para definir versões mínimas do PHP e de estabilidade a fim de não ocorrer incompatibilidade após baixar as dependências.
