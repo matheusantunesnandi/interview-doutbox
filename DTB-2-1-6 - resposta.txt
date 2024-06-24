@@ -1,0 +1,27 @@
+# 2.1.6 Explique o que é o Blade e quais as principais diretivas (cite no mínimo 3).
+
+Blade é um template engine oficial do Laravel.
+Nele criamos o HTML muito mais dinâmico e intuitivo.
+
+O Blade permite segregar as páginas em várias partes menores melhores gerenciadas facilitando a renderização e permitindo a reutilização sem repetição.
+
+Permite o preenchimento dos dados dinamicamente conforme a montagem dos templates em tempo de execução.
+
+Facilita para o desenvolvedor a criação de componentes evitando misturar PHP no meio. Usando apenas quando excepcionalmente necessário.
+As poucas lógicas necessárias como condicionais, loops e etc são feitas com diretivas do próprio blade.
+
+As principais diretivas do blade são:
+1) @yeld:
+Define um nome e onde serão adicionados os conteúdos de uma @section com mesmo nome após usar o @extends.
+
+2) @extends:
+Extende outro template adicionando o conteúdo do atual nele.
+O template atual precisa ter algumas @sections definindo onde cada informação é colocada no template extendido.
+
+3) @include:
+Adiciona um outro template dentro do template atual no local onde foi chamado.
+
+4) @if com ou sem @else
+5) @foreach
+6) @can
+7) @empty
