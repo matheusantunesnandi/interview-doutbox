@@ -1,0 +1,8 @@
+# 2.1.1 O que são as rotas?
+AS rotas são configurações que definem como cada requisição deve chegar Também onde e como serão processadas. Por último retornam a a resposta adequada para o cliente.
+
+Nas rotas definimos as URIs do endpoint, os verbos HTTP de cada URI e para qual controllers serão encaminhadas as requisições do cliente.
+
+Vários outros tipos de configurações podem ser feitas em conjunto com as rotas como o uso de middlewares, definição maunal ou automática das rotas quando defindos alguns controllers como resources, agrupamento de rotas, prefixo e etc.
+
+É nas configurações de rotas onde expomos para o mundo as funcionalidades da aplicação.
