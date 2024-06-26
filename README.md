@@ -1,3 +1,30 @@
+# Observação da questão:
+No PDF essa questão está como **2.2.2 Zoológico** e a última questão está **2.2.2 Rotação de Array**
+Usei esta como DTB-2-2-2 seguindo a ordem.
+Explicando aqui para garantir que as exigências do PDF sejam cumpridas.
+
+# Explicação:
+A rota GET **http://localhost:8000/animals** lista os animais cadastrados, suas ações, idade e seu estado.
+
+A rota GET **http://localhost:8000/animals/create** abre o formulário para cadastrar novo animal.
+
+A rota POST **http://localhost:8000/animals** recebe os dados cadastrados.
+
+# Não uso de conexões com banco de dados:
+Utilizei JSON como base. Poderia ser sessão ou talvez outro.
+Utilizei a classe **Storage** do Laravel para padronizar e usar um local adequado para os dados criados durante a execução da aplicação.
+Ficam em **storage/app/animals.json**.
+
+# Sobre o uso do Enum:
+Pensei em usar outras estratégias, mas o uso de **enum** já deixou flexível.
+Apenas ativando ou desativado um caso de uso no **app/Enums/AnimalAction.php** faz aparecer nas opções do cadastro. Também faz aparecer ou sumir nas ações já cadastradas do animal ao listar ele na index sem precisar remover a ação do animal em animals.json.
+
+Também fiz para estudar a novidade que veio nos PHPs mais recentes. Ante Enum era adaptado.
+
+# Extras:
+Forcei o commit do arquivo animals.json para ficar de exemplo base.
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
