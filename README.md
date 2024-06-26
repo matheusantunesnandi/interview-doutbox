@@ -1,4 +1,11 @@
-## DTB-2-2-2 - Como executar a resposta da tarefa 
+# Observação da questão:
+No PDF essa questão está como **2.2.2 Rotação de Array** e a anterior está **2.2.2 Zoológico**
+Usei esta como DTB-2-2-3 seguindo a ordem.
+Explicando aqui para garantir que as exigências do PDF sejam cumpridas.
+
+Em um cenário real o ideal é entrar em contato. Vai que isso é uma parte do teste.
+
+# DTB-2-2-3 - Como executar a resposta da tarefa 
 ```
 php artisan app:rotate-array '1,2,3,4,5' 4
 ```
